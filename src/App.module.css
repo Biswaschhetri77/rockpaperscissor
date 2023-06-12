@@ -1,0 +1,123 @@
+.container{
+   /* padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center; */
+    text-align: center;
+    margin: 100px;
+}
+.titlectn{
+    background-color:#fff;
+    border-radius: 5px;
+     padding: 20px 0px;
+    margin-bottom: 50px; 
+} 
+ .scoreCtn{
+ display: flex;
+ justify-content: space-between;
+ }
+ .scoreCtn h3{
+    background-color: #181838;
+    color: #ffff;
+    margin: 0px;
+    padding: 15px 0px;
+ }
+ .score{
+    width: 200px;
+    background-color: #fff;
+    margin-bottom: 20px;
+ }
+ .result{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 100px;
+ }
+.palyerHand,
+.computerHand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 7px; 
+}
+/* .reultsWinner{
+    color: #1e1a1a;
+    font-size: 32px;
+    margin:0px;
+    padding: 0px;
+    font-weight: bold;
+    margin-bottom: 50px;
+} */
+
+.resultsWinner{
+    color: #fff;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.resultsMessage{
+    color: #fff;
+    font-size: 22px;
+}
+.choiceBtnCtn{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.choiceBtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+.playBtn{
+    background-color: bisque;
+    padding: 10px 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.bounce{
+    transition: all 0.2s ease-in-out;
+}
+.bounce:hover{
+    transform: translateY(-10px);
+}
+.activeChoice{
+    background-color: orange;
+}
+.timer{
+    font-size: 150px;
+    color: #fff;
+}
+.playerShake{
+    animation: playerShakeAnimation 0.8s ease-in-out infinite;
+}
+.computerShake{
+    animation: computerShakeAnimation 0.8s ease-in-out infinite;
+}
+@keyframes playerShakeAnimation{
+    0%,
+    100%{
+        transform:rotate(100deg);
+    }
+    50%{
+        transform: rotate(80deg);
+    }
+}
+@keyframes computerShakeAnimation{
+    0%,
+    100%{
+        transform: scaleY(-1) rotate(-80deg);
+    }
+    50%{
+        transform: scaleY(-1) rotate(-100deg);
+    }
+}
